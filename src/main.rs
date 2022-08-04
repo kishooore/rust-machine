@@ -1,8 +1,6 @@
 
 trait Shape {
   fn calculate_area(&self) -> usize;
-
-  fn to_string(&self);
 }
 
 #[derive(Debug)]
@@ -21,10 +19,6 @@ impl Shape for Square {
   fn calculate_area(&self) -> usize {
     &self._width * &self._height
  }
-
-  fn to_string(&self) {
-    println!("width: {} height: {}", &self._width, &self._height);
-  }
 }
 
 struct Circle {
@@ -39,10 +33,6 @@ impl Shape for Circle {
   fn calculate_area(&self) -> usize {
     let area = std::f32::consts::PI * *&self.radis as f32 * *&self.radis as f32;
     area as usize
-  }
-
-  fn to_string(&self) {
-    println!("radius: {}", &self.radis);
   }
 }
 
