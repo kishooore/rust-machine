@@ -45,4 +45,8 @@ fn main() {
   area_printer(&square);
   let circle = Circle::new(100);
   area_printer(&circle);
+
+  let string = String::from("Hello World");
+
+  println!("{}", string);
 }
