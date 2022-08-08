@@ -1,8 +1,8 @@
-mod geometry;
+mod my_math;
 
 fn main() {
- let square = geometry::Square::new(10, 20);
- geometry::area_printer(&square);
- let circle = geometry::Circle::new(100);
- geometry::area_printer(&circle);
+ let square = my_math::geometry::Square::new(10, 20);
+ my_math::geometry::area_printer(&square);
+ let circle = my_math::geometry::Circle::new(10);
+ my_math::geometry::area_printer(&circle);
 }
